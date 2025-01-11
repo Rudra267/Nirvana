@@ -1,0 +1,113 @@
+.text-data{
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+.heading{
+   font-size: 3rem;
+   font-weight: 700;
+   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(205, 92, 0) 56%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.list-items{
+    list-style: none;
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list-items li{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: 1px solid #ffffff32;
+}
+.font-body{
+    width:100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+/* .font-body > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+} */
+
+.font-body > .font-body-text{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+    
+}
+
+.font-body > .font-body-text > h1{
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+   background: linear-gradient(90deg, rgb(202, 91, 0) 15%, rgb(235,107,0,1) 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-body > .font-body-text > h1:nth-child(2){
+ 
+}
+/* :root {
+  --btn-icon-bg-color: #191d24;
+  --btn-icon-border-color: rgba(255, 255, 255, 0.3);
+  --btn-icon-shadow-color: rgba(255, 255, 255, 0.5);
+  --btn-social-bg-color: transparent;
+  --btn-social-border-color: transparent;
+  --footer-border-color: #191d24;
+  --link-color: rgba(255, 255, 255, 0.5);
+  --link-hover-color: rgba(255, 255, 255, 1);
+  --link-active-color: rgba(255, 255, 255, 1);
+  --bg-color: #010314;
+  --desc-copyright-color: #69758c;
+} */
+
+
+.circle{
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    width: 80px;
+    height: 80px;
+    /* background-color: red; */
+    border: 2px dashed  rgb(202, 91, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    animation: spin 4s cubic-bezier(0.28, 1.45, 0.56, 1.55) infinite;
+}
+.circle > a > img{
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+
+@keyframes spin{
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-50px); } /* Move up */
+    50% { transform: translateY(0); } /* Back to original position */
+    70% { transform: translateY(-10px); } /* Smaller bounce */
+    90% { transform: translateY(0); } 
+}
